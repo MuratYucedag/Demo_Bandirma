@@ -1,0 +1,21 @@
+﻿@model Demo_Bandirma.DAL.Category
+
+@{
+    ViewData["Title"] = "EditCategory";
+    Layout = "~/Views/Shared/_DemoLayout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<h1>Kategori Düzenleme Sayfası</h1>
+<div style="margin-left:30px; margin-right:100px">
+    <form method="post">
+        <label>Kategori ID</label>
+        @Html.TextBoxFor(x => x.CategoryID)
+        <br />
+        <label>Kategori Adı</label>
+        @Html.TextBoxFor(x => x.CategoryName)
+        <br />
+        <button class="btn btn-outline-info">Güncele</button>
+    </form>
+</div>
